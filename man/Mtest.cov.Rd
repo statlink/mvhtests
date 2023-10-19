@@ -25,7 +25,7 @@ The significance level, set to 0.05 by default.
 }
 
 \details{
-According to Mardia, Bibby and Kent (1979, 140), it may be argued that if \eqn{n_i} is small, then the log-likelihood ratio test (function \code{\link{likel.cov}}) gives too much weight to the contribution of \eqn{{\bf S}}. This consideration led Box (1949) to propose another test statistic in place of that seen in \code{\link{likel.cov}} . Box's \eqn{M} is given by
+According to Mardia, Kent and Bibby (1979, pg. 140), it may be argued that if \eqn{n_i} is small, then the log-likelihood ratio test (function \code{\link{likel.cov}}) gives too much weight to the contribution of \eqn{{\bf S}}. This consideration led Box (1949) to propose another test statistic in place of that seen in \code{\link{likel.cov}} . Box's \eqn{M} is given by
 \deqn{
 M=\gamma\sum_{i=1}^k\left(n_i-1\right)\log{\left|{\bf S}_{i}^{-1}{\bf S}_p \right|},
 }
@@ -37,8 +37,7 @@ A vector with the the test statistic, the p-value, the degrees of freedom and th
 }
 
 \references{
-Mardia K.V., Kent J.T., and Bibby J.M. (1979). Multivariate Analysis, pg. 140. London: Academic
-Press.
+Mardia K.V., Kent J.T. and Bibby J.M. (1979). Multivariate Analysis. London: Academic Press.
 }
 
 \author{

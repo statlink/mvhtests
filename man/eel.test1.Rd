@@ -64,10 +64,10 @@ The runtime of the process.
 
 \references{
 Efron B. (1981) Nonparametric standard errors and confidence intervals. Canadian Journal of
-Statistics. 9(2): 139--158.
+Statistics, 9(2): 139--158.
 
 Jing B.Y. and Wood A.T.A. (1996). Exponential empirical likelihood is not
-Bartlett correctable. Annals of Statistics 24(1): 365--369.
+Bartlett correctable. Annals of Statistics, 24(1): 365--369.
 
 Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
 }

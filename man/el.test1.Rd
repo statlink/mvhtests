@@ -55,12 +55,12 @@ In addition the runtime of the procedure is reported. In the case of bootstrap, 
 
 \references{
 Jing B.Y. and Wood A.T.A. (1996). Exponential empirical likelihood is
-not Bartlett correctable. Annals of Statistics 24(1): 365--369.
+not Bartlett correctable. Annals of Statistics, 24(1): 365--369.
 
 Owen A. (1990). Empirical likelihood ratio confidence regions.
 Annals of Statistics, 18(1): 90--120.
 
-Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
+Owen A.B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
 }
 
 \author{

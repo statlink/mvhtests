@@ -67,9 +67,9 @@ The runtime of the bootstrap calibration.
 }
 
 \references{
-Everitt B. (2005). An R and S-Plus Companion to Multivariate Analysis p. 139--140. Springer.
+Everitt B. (2005). An R and S-Plus Companion to Multivariate Analysis. Springer.
 
-Mardia K.V., Kent J.T., and Bibby J.M. (1979). Multivariate Analysis, pg. 126--127. London: Academic
+Mardia K.V., Kent J.T. and Bibby J.M. (1979). Multivariate Analysis. London: Academic
 Press.
 
 Tsagris M., Preston S. and Wood A.T.A. (2017). Nonparametric hypothesis

@@ -1,11 +1,11 @@
-\name{Relationship between the Hotelling's T2 test and James' MANOVA}
+\name{James multivariate version of the t-test}
 \alias{maovjames.hotel}
 \title{
-Relationship between the Hotelling's \eqn{T^2} test and James' MANOVA
+James multivariate version of the t-test
 }
 
 \description{
-Relationship between the Hotelling's \eqn{T^2} test and James' MANOVA.
+James test for testing the equality of two population mean vectors without assuming equality of the covariance matrices.
 }
 
 \usage{

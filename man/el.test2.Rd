@@ -71,15 +71,15 @@ The runtime of the bootstrap calibration.
 \references{
 Amaral G.J.A., Dryden I.L. and Wood A.T.A. (2007). Pivotal bootstrap methods for k-sample
 problems in directional statistics and shape analysis.
-Journal of the American Statistical Association 102(478): 695--707.
+Journal of the American Statistical Association, 102(478): 695--707.
 
 Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
 
 Owen A.B. (1988). Empirical likelihood ratio confidence intervals for a single functional.
-Biometrika 75(2): 237--249.
+Biometrika, 75(2): 237--249.
 
 Preston S.P. and Wood A.T.A. (2010). Two-Sample Bootstrap Hypothesis Tests for Three-Dimensional
-Labelled Landmark Data. Scandinavian Journal of Statistics 37(4): 568--587.
+Labelled Landmark Data. Scandinavian Journal of Statistics, 37(4): 568--587.
 }
 
 \author{

@@ -43,8 +43,7 @@ A vector with the the test statistic, the p-value, the degrees of freedom and th
 }
 
 \references{
-Mardia K.V., Kent J.T., and Bibby J.M. (1979). Multivariate Analysis, pg. 126--127. London: Academic
-Press.
+Mardia K.V., Kent J.T. and Bibby J.M. (1979). Multivariate Analysis. London: Academic Press.
 }
 
 \author{

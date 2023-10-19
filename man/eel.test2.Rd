@@ -102,15 +102,15 @@ The runtime of the bootstrap calibration.
 
 \references{
 Efron B. (1981) Nonparametric standard errors and confidence intervals. Canadian Journal of
-Statistics. 9(2): 139--158.
+Statistics, 9(2): 139--158.
 
 Jing B.Y. and Wood A.T.A. (1996). Exponential empirical likelihood is
-not Bartlett correctable. Annals of Statistics 24(1): 365--369.
+not Bartlett correctable. Annals of Statistics, 24(1): 365--369.
 
 Jing B.Y. and Robinson J. (1997). Two-sample nonparametric tilting method. Australian Journal of
-Statistics. :39(1): 25--34.
+Statistics, 39(1): 25--34.
 
-Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
+Owen A.B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
 
 Preston S.P. and Wood A.T.A. (2010). Two-Sample Bootstrap Hypothesis Tests
 for Three-Dimensional Labelled Landmark Data. Scandinavian Journal of

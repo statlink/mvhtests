@@ -1,0 +1,9 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("stats", pchisq, optim, rpois, pnorm, cor)
+importFrom("Rfast", rowMins, colmeans, colsums, colVars)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(dcor.fbed, dcor.bs, dcor.mmpc, dcor.bsmmpc)

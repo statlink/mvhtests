@@ -1,0 +1,57 @@
+\name{Hypothesis test for two high-dimensional mean vectors}
+\alias{sarabai}
+\title{
+Hypothesis test for two high-dimensional mean vectors
+}
+
+\description{
+Hypothesis test for two high-dimensional mean vectors.
+}
+
+\usage{
+sarabai(x1, x2)
+}
+
+\arguments{
+\item{x1}{
+A matrix containing the Euclidean data of the first group.
+}
+\item{x2}{
+A matrix containing the Euclidean data of the second group.
+}
+}
+
+\details{
+Hypothesis test for two high-dimensional mean vectors.
+}
+
+\value{
+A vector with the test statistic and the p-value.
+}
+
+\references{
+Bai Z. D. and Saranadasa H. (1996). Effect of high dimension: by an example of a two
+sample problem. Statistica Sinica, 6(2): 311--329.
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+
+\seealso{
+\code{\link{hotel2T2}, \link{maov}, \link{el.test2}, \link{eel.test2}
+}
+}
+
+\examples{
+x1 <- matrix( rnorm(40 * 100), ncol = 100 )
+x2 <- matrix( rnorm(50 * 100), ncol = 100 )
+sarabai(x1, x2)
+}
+

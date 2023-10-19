@@ -1,0 +1,9 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("dcov", dcor, mdcor, pdcor)
+importFrom("stats", pchisq)
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(dcor.fbed, dcor.bs, dcor.mmpc, dcor.bsmmpc)

@@ -1,0 +1,60 @@
+\name{Random values generation from the bivariate Poisson distribution}
+\alias{rbp}
+\title{
+Random values generation from the bivariate Poisson distribution
+}
+
+\description{
+Random values generation from the bivariate Poisson distribution.
+}
+
+\usage{
+rbp(n, lambda1, lambda2, lambda3)
+}
+
+\arguments{
+\item{n}{
+The sample size.
+}
+\item{lambda1}{
+The parameter of the first Poisson variable.
+}
+\item{lambda2}{
+The parameter of the first Poisson variable.
+}
+\item{lambda3}{
+The parameter of the first Poisson variable.
+}
+}
+
+\details{
+The idea to simulate values from the bivariate Poisson is simple. At first generate values from three independent
+Poisson distributions, i.e. \eqn{X_1~Pois(\lambda_1)}, \eqn{X_2~Pois(\lambda_2)} and \eqn{X_3~Pois(\lambda_3)}. Then sum \eqn{X_1} and \eqn{X_2}, i.e. \eqn{X~X_1+X_3} and \eqn{Y~X_2+X_3}. The pair \eqn{(X, Y)} follows the bivariate Poisson distribution with parameters \eqn{(\lambda_1, \lambda_2)} and covariance equal to \eqn{\lambda_3}.
+}
+
+\value{
+A matrix with n rows and 2 columns.
+}
+
+\references{
+Kocherlakota S. and Kocherlakota K. (1992). Bivariate discrete distributions. CRC PRess.
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+\seealso{
+\code{\link{bp.mle} }
+}
+
+\examples{
+x <- rbp(300, c(3, 5, 2))
+bp.mle(x)
+}
+

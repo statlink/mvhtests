@@ -1,0 +1,58 @@
+\name{mvhtests-package}
+\alias{mvhtests-package}
+\docType{package}
+\title{
+Multivariate Hypothesis Tests
+}
+\description{
+Multivariate Hypothesis Tests.
+}
+\details{
+\tabular{lll}{
+Package: \tab mvhtests\cr
+Type: \tab Package\cr
+Version: \tab 1.0\cr
+Date: \tab 2023-10-19\cr
+License: \tab GPL-2\cr
+}
+}
+\author{
+Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+\section{Maintainers}{
+Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+\references{
+Amaral G.J.A., Dryden I.L. and Wood A.T.A. (2007). Pivotal bootstrap methods for k-sample
+problems in directional statistics and shape analysis.
+Journal of the American Statistical Association 102(478): 695-707.
+
+James G.S. (1954). Tests of Linear Hypotheses in Univariate and Multivariate Analysis
+when the Ratios of the Population Variances are Unknown. Biometrika, 41(1/2): 19-43.
+
+Jing Bing-Yi and Andrew TA Wood (1996). Exponential empirical likelihood is not
+Bartlett correctable. Annals of Statistics 24(1): 365-369.
+
+Johnson and Wichern (2007, 6th Edition). Applied Multivariate Statistical Analysis p. 302-303.
+
+Krishnamoorthy K. and Yanping Xia.  On Selecting Tests for Equality of Two Normal
+Mean Vectors (2006). Multivariate Behavioral Research 41(4): 533-548.
+
+Owen A.B. (1988). Empirical likelihood ratio confidence intervals for a single functional.
+Biometrika 75(2): 237-249.
+
+Owen, A. (1990). Empirical likelihood ratio confidence regions.
+Annals of Statistics, 18, 90-120.
+
+Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.
+
+Preston S.P. and Wood A.T.A. (2010). Two-Sample Bootstrap Hypothesis Tests for
+Three-Dimensional Labelled Landmark Data. Scandinavian Journal of Statistics 37(4): 568-587.
+
+Todorov V. and Filzmoser P. (2010). Robust Statistic for the One-way MANOVA.
+Computational Statistics & Data Analysis 54(1):37-48.
+}
+
+

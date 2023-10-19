@@ -1,0 +1,14 @@
+Package: dcorVS
+Type: Package
+Title: Variable Selection Using the Distance Correlation
+Version: 1.0
+Date: 2023-10-16
+Authors@R: person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr")
+Author: Michail Tsagris [aut, cre]
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Depends: R (>= 4.0)
+Imports: dcov, stats
+Suggests: clusterSEs
+Description: The 'FBED' and 'mmpc' variable selection algorithms have been implemented using the distance correlation. Doucouliagos, H. (2015). "Wine prices and quality ratings: a meta-regression analysis". American Journal of Agricultural Economics, 97(1): 103--121. <doi:10.1093/ajae/aau057>.
+License: GPL (>= 2)
+

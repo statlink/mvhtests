@@ -1,0 +1,4 @@
+rbp <- function(n, lambda1, lambda2, lambda3) {
+  x <- cbind( rpois(n, lambda1), rpois(n, lambda2) )
+  x + rpois(n, lambda3)
+}

@@ -1,0 +1,38 @@
+\name{dcorVS-package}
+\alias{dcorVS-package}
+\docType{package}
+\title{
+Variable Selection Algorithms Using the Distance Correlation.
+}
+\description{
+The 'FBED' and 'mmpc' variable selection algorithms have been implemented using the distance correlation.
+}
+\details{
+\tabular{lll}{
+Package: \tab crwbmetareg\cr
+Type: \tab Package\cr
+Version: \tab 1.0\cr
+Date: \tab 2023-10-16\cr
+License: \tab GPL-2\cr
+}
+}
+\author{
+Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+\section{Maintainers}{
+Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+\references{
+Oczkowski, E. and Doucouliagos, H. (2015).
+Wine prices and quality ratings: a meta-regression analysis.
+American Journal of Agricultural Economics, 97(1): 103-121.
+
+Cameron, A. C., Gelbach, J. B. and Miller, D. L. (2008).
+Bootstrap-based improvements for inference with clustered errors.
+The Review of Economics and Statistics, 90(3): 414-427.
+}
+
+
+

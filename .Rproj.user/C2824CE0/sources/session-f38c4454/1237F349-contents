@@ -1,0 +1,75 @@
+\name{Maximum likelihood estimation of the bivariate Poisson distribution}
+\alias{bp.mle}
+\title{
+Maximum likelihood estimation of the bivariate Poisson distribution
+}
+
+\description{
+Maximum likelihood estimation of the bivariate Poisson distribution.
+}
+
+\usage{
+bp.mle(x1, x2 = NULL)
+}
+
+\arguments{
+\item{x1}{
+Either a numerical vector with the values of the first variable or a matrix with 2 columns containing both variables. In the latter case, x2 must be NULL.
+}
+\item{x2}{
+A numerical vector with the values of the second. If x1 is a matrix with 2 columns containing both variables, x2 must be NULL.}
+}
+
+\details{
+
+}
+
+\value{
+A list including:
+\item{lambda}{
+A vector with the estimated values of \eqn{(\lambda_1}, \eqn{\lambda_2)} and \eqn{\lambda_3}.
+Note that the estimators of \eqn{\lambda_1} and \eqn{\lambda_3} are the mean of each variable.
+}
+\item{\rho}{
+The correlation coefficient, that is: \eqn{\dfrac{\lambda_3}{\lambda_1+\lambda_2}}.
+}
+\item{ci}{
+The 95\% Confidence intervals using the observed and the asymptotic information matrix.
+}
+\item{loglik}{
+The log-likelihood values assuming independence (\eqn{\lambda_3=0}) and assuming the bivariate Poisson distribution.
+}
+\item{pvalue}{
+Three p-values for testing \eqn{\lambda_3=0}. These are based on the log-likelihood ratio and two Wald tests using the observed and the asymptotic information matrix.
+}
+}
+
+\references{
+Kawamura K. (1984). Direct calculation of maximum likelihood estimator for the bivariate
+Poisson distribution. Kodai Mathematical Journal, 7(2): 211-–221.
+
+Kocherlakota S. and Kocherlakota K. (1998). Bivariate discrete distributions. Wiley Online
+Library.
+
+Karlis D. and Ntzoufras I. (2003). Analysis of sports data by using bivariate poisson models.
+Journal of the Royal Statistical Society: Series D (The Statistician), 52(3): 381–-393.
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+\seealso{
+\code{\link{bp.mle} }
+}
+
+\examples{
+x <- rbp(300, c(3, 5, 2))
+bp.mle(x)
+}
+

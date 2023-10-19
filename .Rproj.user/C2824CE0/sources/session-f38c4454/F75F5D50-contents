@@ -1,0 +1,60 @@
+\name{Log-likelihood ratio test for equality of two or more covariance matrices}
+\alias{cov.equal}
+\title{
+Log-likelihood ratio test for equality of two or more covariance matrices
+}
+
+\description{
+Log-likelihood ratio test for equality of two or more covariance matrices.
+}
+
+\usage{
+cov.equal(x, Sigma, a = 0.05)
+}
+
+\arguments{
+\item{x}{
+A matrix containing Euclidean data.
+}
+\item{Sigma}{
+The hypothesis covariance matrix.
+}
+\item{a}{
+The significance level, set to 0.05 by default.
+}
+}
+
+\details{
+Multivariate hypothesis test for equality of covariance matrices.
+}
+
+\value{
+A vector with the the test statistic, the p-value, the degrees of freedom and the critical value of the test.
+}
+
+\references{
+Mardia K. V., Kent J. T., and Bibby J. M. (1979). Multivariate Analysis, pg. 126-127. London: Academic
+Press.
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+
+\seealso{
+\code{\link{likel.cov}, \link{Mtest.cov}
+}
+}
+
+\examples{
+x <- as.matrix( iris[, 1:4] )
+s <- cov(x) * 1.5
+equal.cov(x, s)
+}
+

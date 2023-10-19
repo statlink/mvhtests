@@ -1,11 +1,11 @@
-\name{Relationship between Hotelling's T2 test and James' MANOVA}
+\name{Relationship between the Hotelling's T2 test and James' MANOVA}
 \alias{maovjames.hotel}
 \title{
-Relationship between Hotelling's \eqn{T^2} test and James' MANOVA
+Relationship between the Hotelling's \eqn{T^2} test and James' MANOVA
 }
 
 \description{
-Relationship between Hotelling's \eqn{T^2} test and James' MANOVA.
+Relationship between the Hotelling's \eqn{T^2} test and James' MANOVA.
 }
 
 \usage{

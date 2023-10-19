@@ -33,14 +33,18 @@ A boolean variable which is taken into consideration only when bootstrap calibra
 \details{
 The \eqn{H_0} is that \eqn{\pmb{\mu} = \pmb{\mu}_0} and the constraint imposed by EL is
 \deqn{
-\frac{1}{n}\sum_{i=1}^{n}\left\lbrace\left[1+\pmb{\lambda}_j^T\left({\bf x}_i-\pmb{\mu} \right)\right]^{-1}\left({\bf x}_i-\pmb{\mu}_0\right)\right\rbrace={\bf 0},
+\frac{1}{n}\sum_{i=1}^{n}\left\lbrace\left[1+\pmb{\lambda}^T\left({\bf x}_i-\pmb{\mu}_0 \right)\right]^{-1}\left({\bf x}_i-\pmb{\mu}_0\right)\right\rbrace={\bf 0},
 }
 where the \eqn{\pmb{\lambda}} is the Lagrangian parameter introduced to maximize the above expression. Note that the maximization of is with respect to the \eqn{\pmb{\lambda}}. The probabilities have the following form
 \deqn{
-p_i=\frac{1}{n} \left[1+\pmb{\lambda}^T \left({\bf x}_i-\pmb{\mu} \right)\right]^{-1}}. The log-likelihood ratio test statistic can be written as
+p_i=\frac{1}{n}\left[1+\pmb{\lambda}^T \left({\bf x}_i-\pmb{\mu}_0 \right)\right]^{-1}.
+}
+
+The log-likelihood ratio test statistic can be written as
 \deqn{
 \Lambda=\sum_{i=1}^{n}\log{np_i}.
 }
+where \eqn{d} denotes the number of variables. Under \eqn{H_0} \eqn{\Lambda \sim \chi^2_d}, asymptotically. Alternatively the bootstrap p-value may be computed.
 }
 
 \value{
@@ -50,10 +54,10 @@ In addition the runtime of the procedure is reported. In the case of bootstrap, 
 }
 
 \references{
-Jing B.Y. and Andrew TA Wood (1996). Exponential empirical likelihood is
+Jing B.Y. and Wood A.T.A. (1996). Exponential empirical likelihood is
 not Bartlett correctable. Annals of Statistics 24(1): 365--369.
 
-Owen, A. (1990). Empirical likelihood ratio confidence regions.
+Owen A. (1990). Empirical likelihood ratio confidence regions.
 Annals of Statistics, 18(1): 90--120.
 
 Owen A. B. (2001). Empirical likelihood. Chapman and Hall/CRC Press.

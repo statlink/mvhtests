@@ -1,0 +1,84 @@
+\name{James multivariate version of the t-test}
+\alias{maovjames.hotel}
+\title{
+James multivariate version of the t-test
+}
+
+\description{
+James test for testing the equality of two population mean vectors without assuming equality of the covariance matrices.
+}
+
+\usage{
+maovjames.hotel(x1, x2)
+}
+
+\arguments{
+\item{x1}{
+A matrix containing the Euclidean data of the first group.
+}
+\item{x2}{
+A matrix containing the Euclidean data of the second group.
+}
+}
+
+\details{
+The relationship for the James two sample test (see \code{\link{james.hotel}}) is true for the case of the MANOVA. The estimate of the common mean, \eqn{\pmb{mu}_c} (see the function \code{\link{james}} for the expression of \eqn{\pmb{\mu}_c}), is in general, for \eqn{g} groups, each of sample size \eqn{n_i}, written as
+\deqn{
+\hat{\pmb{\mu}}_c = \left(\sum_{i=1}^gn_i{\bf S}_i^{-1}\right)^{-1}\sum_{i=1}^gn_i{\bf S}_i^{-1}\bar{{\bf X}}_i.
+}
+
+The function is just a proof of the mathematics you will find in Emerson (2009, pg. 76--81) and is again intended for educational purposes.
+}
+
+\value{
+A list including:
+\item{note}{
+A message informing the user about the test used.
+}
+\item{mesoi}{
+The two mean vectors.
+}
+\item{info}{
+The test statistic, the p-value, the correction factor and the corrected critical value
+of the chi-square distribution if the James test has been used or, the test statistic,
+the p-value, the critical value and the degrees of freedom (numerator and denominator)
+of the F distribution if the modified James test has been used.
+}
+\item{pvalue}{
+The bootstrap p-value if bootstrap is employed.
+}
+\item{runtime}{
+The runtime of the bootstrap calibration.
+}
+}
+
+\references{
+Emerson S. (2009). Small sample performance and calibration of the Empirical Likelihood method.
+PhD thesis, Stanford university.
+
+James G.S. (1954). Tests of Linear Hypothese in Univariate and Multivariate Analysis
+when the Ratios of the Population Variances are Unknown. Biometrika, 41(1/2): 19--43.
+
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+
+\seealso{
+\code{\link{hotel2T2}, \link{maovjames}, \link{el.test2}, \link{eel.test2}
+}
+}
+
+\examples{
+james( as.matrix(iris[1:25, 1:4]), as.matrix(iris[26:50, 1:4]), R = 1 )
+james( as.matrix(iris[1:25, 1:4]), as.matrix(iris[26:50, 1:4]), R = 2 )
+james( as.matrix(iris[1:25, 1:4]), as.matrix(iris[26:50, 1:4]) )
+}
+

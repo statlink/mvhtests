@@ -11,8 +11,8 @@ Multivariate Hypothesis Tests.
 \tabular{lll}{
 Package: \tab mvhtests\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2023-10-19\cr
+Version: \tab 1.1\cr
+Date: \tab 2025-01-07\cr
 License: \tab GPL-2\cr
 }
 }

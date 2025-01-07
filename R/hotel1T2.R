@@ -30,7 +30,7 @@ hotel1T2 <- function(x, M, a = 0.05, R = 999, graph = FALSE) {
   if (R > 1) {
     ## bootstrap calibration
     tb <- numeric(R)
-    mm <-  - m + M
+    mm <- M - m 
     y <- Rfast::eachrow(x, mm, oper = "+") ## brings the data
     ## under the null hypothesis, i.e. mean vector equal to M
     for (i in 1:R) {
@@ -38,8 +38,7 @@ hotel1T2 <- function(x, M, a = 0.05, R = 999, graph = FALSE) {
       yb <- y[b, ]
       sb <- Rfast::cova(yb)
       mb <- Rfast::colmeans(yb)
-      dmb <- mb - M
-      tb[i] <- dmb %*% solve(sb, dmb)
+      tb[i] <- Rfast::mahala(mb, M, sb)
     }
     tb <- n * (n - p) / (n - 1) / p * tb
     pvalue <- ( sum(tb > test) + 1 )/(R + 1)  ## bootstrap p-value

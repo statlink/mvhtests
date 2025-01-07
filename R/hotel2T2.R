@@ -65,8 +65,7 @@ hotel2T2 <- function(x1, x2, a = 0.05, R = 999, graph = FALSE) {
     for (i in 1:B) {
       for (j in 1:B) {
         vb <- vb1[[ i ]] + vb2[[ j ]]
-        db <- bm1[i, ] - bm2[j, ]
-        tb[i, j] <- db %*% solve(vb, db)
+        tb[i, j] <- Rfast::mahala(bm1[i, ], bm2[j, ], vb)
       }
     }
     pvalue <- ( sum(tb > t2) + 1 )/(B^2 + 1)

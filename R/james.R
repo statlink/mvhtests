@@ -87,9 +87,8 @@ james <- function(y1, y2, a = 0.05, R = 999, graph = FALSE) {
 	  b1 <- Rfast2::Sample.int(n1, n1, replace = TRUE)
 	  b2 <- Rfast2::Sample.int(n2, n2, replace = TRUE)
       xb1 <- x1[b1, ]     ;      xb2 <- x2[b2, ]
-      db <- Rfast::colmeans(xb1) - Rfast::colmeans(xb2)  ## difference of the two mean vectors
       Vb <- Rfast::cova(xb1) / n1 + Rfast::cova(xb2) / n2  ## covariance matrix of the difference
-      tb[i] <- sum( db %*% solve(Vb, db ) )
+      tb[i] <- Rfast::mahala( Rfast::colmeans(xb1), Rfast::colmeans(xb2), Vb)
     }
     pvalue <- ( sum(tb > test) + 1 ) / (R + 1)
 

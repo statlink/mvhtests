@@ -48,7 +48,7 @@ where \eqn{d} denotes the number of variables. Under \eqn{H_0} \eqn{\Lambda \sim
 }
 
 \value{
-A list with the outcome of the function \code{\link{el.test}} which includes
+A list with the outcome of the function \bold{el.test}() from the package \bold{emplik} which includes
 the -2 log-likelihood ratio, the observed P-value by chi-square approximation, the final value of Lagrange multiplier \eqn{\lambda}, the gradient at the maximum, the Hessian matrix, the weights on the observations (probabilities multiplied by the sample size) and the number of iteration performed.
 In addition the runtime of the procedure is reported. In the case of bootstrap, the bootstrap p-value is also returned.
 }

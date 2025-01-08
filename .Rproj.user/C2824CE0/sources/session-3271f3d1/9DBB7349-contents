@@ -1,0 +1,18 @@
+#useDynLib(fsn, .registration = TRUE)
+
+importFrom("stats", pchisq, pf, qf, qchisq, nlm, pnorm, optim)
+importFrom("Rfast", colsums, eachrow, colmeans, cova, spdinv)
+importFrom("Rfast2", Sample.int, colGroup, rm.hotel)
+importFrom("graphics", abline, hist)
+importFrom("emplik", el.test)
+
+import("doParallel")
+import("parallel")
+import("foreach")
+
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+
+export(eel.test1, eel.test2, el.test1, el.test2, equal.cov, hotel1T2, hotel2T2,
+       james.hotel, james, likel.cov, maov, maovjames.hotel, maovjames,
+       Mtest.cov, rm.hotel, sarabai)
